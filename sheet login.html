@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Career Finder</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#eef2ff;
+}
+/* Header */
+header{
+    background:#0b125f;
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+header h2{
+    color:#38bdf8;
+}
+
+header a{
+    color:#fff;
+    margin-left:20px;
+    text-decoration:none;
+    font-size:15px;
+}
+
+header button{
+    margin-left:20px;
+    padding:8px 14px;
+    background:#38bdf8;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+/* Hero */
+.hero{
+ background:linear-gradient(120deg,#111827,#111827);
+    color:white;
+    padding:90px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:white;
+}
+
+.hero p{
+    font-size:16px;
+    margin-bottom:40px;
+    opacity:0.9;
+}
+
+/* Search Box */
+.search-box{
+    background:white;
+    width:70%;
+    margin:auto;
+    padding:20px;
+    border-radius:12px;
+    display:flex;
+    gap:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.search-box input,
+.search-box select{
+    flex:1;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
+.search-box button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Stats */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin-top:60px;
+}
+
+.stat{
+    background:white;
+    padding:25px 35px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat h3{
+    color:#2563eb;
+    font-size:26px;
+}
+
+.stat p{
+    font-size:14px;
+    margin-top:5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Find Your Dream job</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Jobs</a>
+        <a href="#">Companies</a>
+        <a href="#">Contact</a>
+        <button>Post Job</button>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Search Your <span>Next Career</span></h1>
+    <p>Thousands of verified jobs from top companies</p>
+
+    <div class="search-box">
+        <input type="text" placeholder="Job title or keyword">
+        <select>
+            <option>Select Location</option>
+            <option>Pune</option>
+            <option>Mumbai</option>
+            <option>Bangalore</option>
+        </select>
+        <button>Find Job</button>
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>6K+</h3>
+            <p>Jobs Posted</p>
+        </div>
+        <div class="stat">
+            <h3>2K+</h3>
+            <p>Companies</p>
+        </div>
+        <div class="stat">
+            <h3>10K+</h3>
+            <p>Candidates</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
